@@ -20,6 +20,11 @@ import Pileofpillows from '../screens/Home/PileOfPillows';
 //Manage
 import MyFarm from '../screens/Manage/MyFarm';
 import MyAgriculturalProcess from '../screens/Manage/MyAgriculturalProcess';
+import FertilizerInformation from '../screens/Manage/FertilizerInformation';
+import AgriculturalProcess from '../screens/Manage/AgriculturalProcess';
+import IncubateRawMaterialsFist from '../screens/Manage/IncubateRawMaterialsFist';
+import IncubateRawMaterialsSecond from '../screens/Manage/IncubateRawMaterialsSecond';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -54,7 +59,7 @@ export default function RootStack() {
     //   />
     //   <Stack.Screen name="Pileofpillows" component={Pileofpillows} />
     // </Stack.Navigator>
-    <MyFarm></MyFarm>
+    <IncubateRawMaterialsSecond></IncubateRawMaterialsSecond>
 
   );
 }
