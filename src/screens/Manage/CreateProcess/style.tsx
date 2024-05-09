@@ -15,14 +15,16 @@ const styles = StyleSheet.create({
     fontFamily: 'IBMPlexSans-Bold',
     fontWeight: '700',
   },
+  // thanh tiêu đề
   title: {
-    borderColor: 'rgba(255,255,255,0.3)',
+    borderColor: 'rgba(255,255,255,0.5)',
     borderBottomWidth: 1,
     flexDirection: 'row',
     padding: '3%',
     alignItems: 'center',
     height: '6%',
   },
+  goback: {},
   texttitle: {
     fontSize: 20,
     lineHeight: 19,
@@ -30,19 +32,34 @@ const styles = StyleSheet.create({
     marginLeft: '5%',
     color: colors.white,
   },
-  createicon: {
-    marginLeft: '30%',
-    marginTop: '1%',
+  //input
+  containerInput: {
+    flex: 1,
+    alignItems: 'flex-start',
+    marginLeft: '10%',
+    marginTop: '10%',
   },
-  // textcontent
-  textcontent: {
-    fontFamily: 'Inter-Bold',
-    fontWeight: '700',
-    fontSize: 13,
-    lineHeight: 15.73,
-    color: 'rgba(255, 255, 255, 1)',
-    textAlign: 'center',
-    marginVertical: '6.5%'
+  lable: {
+    fontFamily: 'Poppins-Regular',
+    fontWeight: '400',
+    fontSize: 14,
+    lineHeight: 21,
+    color: colors.white,
+    marginTop: '5%',
+    marginBottom: '2%',
+  },
+  input: {
+    fontFamily: 'Poppins-Regular',
+    fontWeight: '400',
+    fontSize: 10,
+    lineHeight: 15,
+    color: 'rgba(255, 255, 255, 0.4)',
+    backgroundColor: 'rgba(6, 100, 153, 0.3)',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
+    width: '90%',
+    paddingLeft: 15,
+    borderRadius: 10,
   },
   //button
   containerButon: {
@@ -60,8 +77,9 @@ const styles = StyleSheet.create({
     borderRadius: 23.5,
     height: '100%',
     width: '100%',
+    marginTop: '-120%'
   },
-  createmore: {
+  textbutton: {
     fontSize: 20,
     lineHeight: 23,
     color: 'black',
