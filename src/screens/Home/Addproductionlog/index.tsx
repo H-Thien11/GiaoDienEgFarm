@@ -5,19 +5,14 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
-  ActivityIndicator,
-  StyleSheet,
 } from 'react-native';
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import styles from './style';
-import LinearGradient from 'react-native-linear-gradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
 import {useNavigation} from '@react-navigation/native';
-import DropDownPicker from 'react-native-dropdown-picker';
 import {images} from '../../../assets/theme/images';
-import Title from '../../../components/Title';
-import {Camera, useCameraDevice} from 'react-native-vision-camera';
+
 
 export default function Index() {
   const navigation = useNavigation() as any;

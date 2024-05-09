@@ -17,7 +17,7 @@ export default function Manage() {
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={require('../../assets/img/background.png')}
+      source={images.backGround}
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* title */}
