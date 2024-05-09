@@ -54,25 +54,19 @@ export default function Index() {
           </TouchableOpacity>
         </View>
         {/* secsion */}
-        <View style={{flex: 1}}>
-          {/* input production area */}
-          <View style={[styles.inputcontent]}>
-            <Text style={[styles.labelfirts, styles.textlable]}>
-              Process name
-            </Text>
-            <TextInput
-              style={[styles.input]}
-              placeholder="Click to get production location"
-              placeholderTextColor="rgba(255, 255, 255, 0.4)"
+        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+          {/* image */}
+          <View style={{width: 171, height: 112}}>
+            <Image
+              style={{width: '100%', height: '100%'}}
+              source={images.noprocess}
             />
-            <TouchableOpacity activeOpacity={0.7} style={styles.map}>
-              <Image
-                source={images.iconmap}
-                style={{width: '70%', height: '80%'}}
-              />
-            </TouchableOpacity>
           </View>
-
+          {/* text */}
+          <Text style={styles.textcontent}>
+            You don't have any process yet! Do you{'\n'}want to create your own
+            process!
+          </Text>
           {/* button */}
           <View style={styles.containerButon}>
             {/* button Completed  */}
@@ -86,7 +80,7 @@ export default function Index() {
                 start={{x: 1, y: 0}}
                 end={{x: 0, y: 1}}
                 style={styles.gradient}>
-                <Text style={[styles.completed, styles.font]}>Completed</Text>
+                <Text style={[styles.completed, styles.font]}>Creat more</Text>
               </LinearGradient>
             </TouchableOpacity>
           </View>

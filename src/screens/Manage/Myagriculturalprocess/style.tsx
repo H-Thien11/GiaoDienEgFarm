@@ -30,134 +30,29 @@ const styles = StyleSheet.create({
     marginLeft: '5%',
     color: colors.white,
   },
-  content: {
-    flex: 1,
-  },
   createicon: {
-    left: '555%',
-},
-  // input first
-  textlable: {
-    fontFamily: 'Poppins-Regular',
-    fontWeight: '400',
-    color: 'rgba(255, 255, 255, 1)',
-    fontSize: 14,
-    lineHeight: 21,
-    marginBottom: '1.5%',
+    marginLeft: '30%',
+    marginTop: '1%',
   },
-  labelfirts: {
-    marginRight: '62%',
-  },
-  labelthird: {
-    marginRight: '70%',
-  },
-  inputcontent: {
-    width: '100%',
-    alignItems: 'center',
-    marginTop: '13%',
-  },
-  input: {
-    fontFamily: 'Poppins-Regular',
-    fontWeight: '400',
+  // textcontent
+  textcontent: {
+    fontFamily: 'Inter-Bold',
+    fontWeight: '700',
     fontSize: 13,
-    lineHeight: 19.5,
+    lineHeight: 15.73,
     color: 'rgba(255, 255, 255, 1)',
-    backgroundColor: 'rgba(6, 100, 153, 0.3)',
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
-    width: '85%',
-    paddingLeft: '3%',
-    borderRadius: 10,
-  },
-  map: {
-    flex: 1,
-    position: 'absolute',
-    left: '84%',
-    top: '45%',
-    width: '6%',
-    height: '40%',
-    // backgroundColor: 'red',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  //    input second
-  inputsecond: {
-    fontFamily: 'Poppins-Regular',
-    fontWeight: '400',
-    fontSize: 13,
-    lineHeight: 19.5,
-    color: 'rgba(255, 255, 255, 1)',
-    backgroundColor: 'rgba(6, 100, 153, 0.3)',
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
-    width: '85%',
-    padding: '3%',
-    borderRadius: 10,
-    textAlignVertical: 'top',
-  },
-  labelsecond: {
-    marginRight: '73%',
-  },
-  inputcontentsecond: {
-    justifyContent: 'center',
-    width: '100%',
-    alignItems: 'center',
-    marginTop: '8%',
-  },
-  inputthird: {
-    fontFamily: 'Poppins-Regular',
-    fontWeight: '400',
-    fontSize: 13,
-    lineHeight: 19.5,
-    color: 'rgba(255, 255, 255, 1)',
-    backgroundColor: 'rgba(6, 100, 153, 0.3)',
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
-    width: '100%',
-    padding: '3%',
-    borderRadius: 10,
-    textAlignVertical: 'top',
-  },
-  //   addphoto
-  add: {
-    alignItems: 'center',
-    color: 'rgba(209, 209, 209, 1)',
-    // backgroundColor: 'red',
-    position: 'absolute',
-    bottom: '30%',
-  },
-  addphoto: {
-    // backgroundColor: 'blue',
-    width: '85%',
-    borderRadius: 10,
-    alignItems: 'center',
-  },
-  noteadd: {
-    fontFamily: 'Poppins-Regular',
-    fontWeight: '400',
-    marginTop: '2%',
-    fontSize: 8,
-    lineHeight: 10.5,
-    color: 'rgba(209, 209, 209, 1)',
+    textAlign: 'center',
+    marginVertical: '6.5%'
   },
   //button
   containerButon: {
     alignItems: 'center',
-    marginTop: '20%',
   },
   button: {
     height: 50,
     width: 277,
     marginHorizontal: 'auto',
     borderRadius: 23.5,
-  },
-  buttoncancel: {
-    marginTop: '3%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 23.5,
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 1)',
   },
   gradient: {
     justifyContent: 'center',
@@ -171,11 +66,5 @@ const styles = StyleSheet.create({
     lineHeight: 23,
     color: 'black',
   },
-  cancel: {
-    fontSize: 20,
-    lineHeight: 23,
-    color: 'rgba(255, 255, 255, 1)',
-  },
-  //
 });
 export default styles;

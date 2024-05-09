@@ -55,5 +55,6 @@ export default function RootStack() {
     //   <Stack.Screen name="Pileofpillows" component={Pileofpillows} />
     // </Stack.Navigator>
     <MyFarm></MyFarm>
+
   );
 }
