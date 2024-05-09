@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
   imageContainer: {
     flex: 1,
     alignItems: 'center',
-    // backgroundColor: 'red',
     top: '16.5%',
   },
   imageUserBG: {
@@ -54,11 +53,13 @@ const styles = StyleSheet.create({
   //Rectangle
   containerRectangle: {
     flex: 1,
+    alignItems: 'center',
+    top: '8%',
+
   },
   rectangle: {
-    alignItems: 'center',
-    top: '15%',
-    marginVertical: '3%'
+    marginVertical: '3.5%',
+    width: '85%'
   },
   textRectangle: {
     fontFamily: 'Inter-Medium',
@@ -67,20 +68,18 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     position: 'absolute',
     color: colors.white,
-    left: '17%',
+    left: '10%',
     top: '10%',
   },
   vector: {
     position: 'absolute',
-    bottom: '25%',
-    left: '17%',
+    left: '12.5%',
+    top: '50%'
   },
   image: {
     position: 'absolute',
     bottom: '15%',
-    right: '17%',
-    height: 120,
-    width: 100
+    right: '7.5%',
   },
 });
 

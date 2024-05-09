@@ -8,11 +8,10 @@ import {
 import React from 'react';
 import styles from './style';
 import {images} from '../../assets/theme/images';
-import { useNavigation } from '@react-navigation/native';
-
+import {useNavigation} from '@react-navigation/native';
 
 export default function Home() {
-   const navigation = useNavigation() as any;
+  const navigation = useNavigation() as any;
   return (
     <ImageBackground
       resizeMode="stretch"
@@ -28,7 +27,7 @@ export default function Home() {
             <Text style={styles.textName}>Name</Text>
             <Text style={styles.textfirst}>Production Staff</Text>
             <Text style={[styles.textfirst, styles.textsecond]}>
-              What do you want to do today?
+              What do you want to do today? tao là hi hòn
             </Text>
           </View>
         </View>
@@ -37,12 +36,12 @@ export default function Home() {
         <View style={styles.containerRectangle}>
           {/* item 1 */}
           <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
-            <Image
-              style={{width: '85%', height: 100}}
-              source={images.backGroundRectangle}></Image>
-            <Text style={styles.textRectangle}>Add production log</Text>
-            <Image style={styles.vector} source={images.vector}></Image>
-            <Image style={styles.image} source={images.imgHome1}></Image>
+            <View style={{alignItems: 'center'}}>
+              <Image source={images.backGroundRectangle}></Image>
+              <Text style={styles.textRectangle}>Add production log</Text>
+              <Image style={styles.vector} source={images.vector}></Image>
+              <Image style={styles.image} source={images.imgHome1}></Image>
+            </View>
           </TouchableOpacity>
 
           {/* item 2 */}
@@ -50,12 +49,12 @@ export default function Home() {
             onPress={() => navigation.navigate('ActivateStampsFirst')}
             activeOpacity={0.7}
             style={styles.rectangle}>
-            <Image
-              style={{width: '85%', height: 100}}
-              source={images.backGroundRectangle}></Image>
-            <Text style={styles.textRectangle}>Activate Stamps</Text>
-            <Image style={styles.vector} source={images.vector}></Image>
-            <Image style={styles.image} source={images.imgHome2}></Image>
+            <View style={{alignItems: 'center'}}>
+              <Image source={images.backGroundRectangle}></Image>
+              <Text style={styles.textRectangle}>Activate Stamps</Text>
+              <Image style={styles.vector} source={images.vector}></Image>
+              <Image style={styles.image} source={images.imgHome2}></Image>
+            </View>
           </TouchableOpacity>
 
           {/* item 3 */}
@@ -63,12 +62,12 @@ export default function Home() {
             onPress={() => navigation.navigate('Pileofpillows')}
             activeOpacity={0.7}
             style={styles.rectangle}>
-            <Image
-              style={{width: '85%', height: 100}}
-              source={images.backGroundRectangle}></Image>
-            <Text style={styles.textRectangle}>Pile of pillows</Text>
-            <Image style={styles.vector} source={images.vector}></Image>
-            <Image style={styles.image} source={images.imgHome3}></Image>
+            <View style={{alignItems: 'center'}}>
+              <Image source={images.backGroundRectangle}></Image>
+              <Text style={styles.textRectangle}>Pile of pillows</Text>
+              <Image style={styles.vector} source={images.vector}></Image>
+              <Image style={styles.image} source={images.imgHome3}></Image>
+            </View>
           </TouchableOpacity>
         </View>
       </View>
