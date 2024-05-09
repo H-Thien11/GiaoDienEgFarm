@@ -63,11 +63,6 @@ export default function TabBottom() {
       <Tab.Screen name="Manage" component={Manage} />
       <Tab.Screen name="News" component={News} />
       <Tab.Screen name="Information" component={Information} />
-      <Tab.Screen
-        options={{tabBarStyle: {display: 'none'}}}
-        name="Pileofpillows"
-        component={Pileofpillows}
-      />
     </Tab.Navigator>
   );
 }
