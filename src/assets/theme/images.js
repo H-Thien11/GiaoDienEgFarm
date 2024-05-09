@@ -43,5 +43,6 @@ export const images = {
   //Manage
   bell: require('../img/bell.png'),
   backGroundRectangle2: require('../img/backGroundRectangle2.png'),
-  createicon: require('../img/createicon.png')
+  createicon: require('../img/createicon.png'),
+  noprocess: require('../img/noprocess.png'),
 };
