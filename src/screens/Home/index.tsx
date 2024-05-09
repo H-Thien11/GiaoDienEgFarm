@@ -35,7 +35,10 @@ export default function Home() {
         {/* choice */}
         <View style={styles.containerRectangle}>
           {/* item 1 */}
-          <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('AddProductionLog')}
+            activeOpacity={0.7}
+            style={styles.rectangle}>
             <View style={{alignItems: 'center'}}>
               <Image source={images.backGroundRectangle}></Image>
               <Text style={styles.textRectangle}>Add production log</Text>

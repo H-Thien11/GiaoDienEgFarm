@@ -8,11 +8,12 @@ import {
 import React from 'react';
 import styles from './style';
 
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {images} from '../../assets/theme/images';
 
-const Tab = createBottomTabNavigator();
+import {images} from '../../assets/theme/images';
+import { useNavigation } from '@react-navigation/native';
+
 export default function Manage() {
+  const navigation = useNavigation() as any;
   return (
     <ImageBackground
       resizeMode="stretch"
@@ -22,7 +23,7 @@ export default function Manage() {
         {/* title */}
         <View style={styles.title}>
           <Text style={[styles.texttitle, styles.font]}>Manage</Text>
-          <Image style={{left:'240%'}} source={images.iconscanseri} />
+          <Image style={{left: '240%'}} source={images.iconscanseri} />
           <Image style={{}} source={images.bell} />
         </View>
         {/* items container */}
@@ -33,6 +34,7 @@ export default function Manage() {
           }}>
           {/* items 1 */}
           <TouchableOpacity
+            onPress={() => navigation.navigate('MyFarm')}
             activeOpacity={0.7}
             style={{justifyContent: 'center', marginBottom: '5%'}}>
             <Image source={images.backGroundRectangle2} />

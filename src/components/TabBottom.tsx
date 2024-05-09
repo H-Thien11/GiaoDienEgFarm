@@ -8,9 +8,7 @@ import Home from '../screens/Home';
 import Manage from '../screens/Manage';
 import News from '../screens/News';
 import Information from '../screens/Information';
-import Pileofpillows from '../screens/Home/Pileofpillows';
-
-
+import Pileofpillows from '../screens/Home/PileOfPillows';
 
 const Tab = createBottomTabNavigator();
 export default function TabBottom() {
