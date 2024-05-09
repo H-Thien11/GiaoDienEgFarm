@@ -27,7 +27,7 @@ export default function Home() {
             <Text style={styles.textName}>Name</Text>
             <Text style={styles.textfirst}>Production Staff</Text>
             <Text style={[styles.textfirst, styles.textsecond]}>
-              What do you want to do today? tao là hi hòn
+              What do you want to do today?
             </Text>
           </View>
         </View>
