@@ -23,10 +23,10 @@ export default function TabBottom() {
             customSizeWidth = focused ? size + 11 : size + 11;
           } else if (route.name === 'Manage') {
             iconSource = focused ? images.iconManage : images.iconManageOutline;
-            customSizeWidth = focused ? size + 15 : size + 15;
+            customSizeWidth = focused ? size + 19 : size + 19;
           } else if (route.name === 'News') {
             iconSource = focused ? images.iconNews : images.iconNewsOutline;
-            customSizeWidth = focused ? size + 3: size + 3;
+            customSizeWidth = focused ? size + 8: size + 8;
           } else if (route.name === 'Information') {
             iconSource = focused
               ? images.iconInformation

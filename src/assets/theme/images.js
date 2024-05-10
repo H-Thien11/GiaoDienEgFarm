@@ -65,4 +65,11 @@ export const images = {
   circlequestion: require('../img/circlequestion.png'),
   memoxmark: require('../img/memoxmark.png'),
   angleright: require('../img/angleright.png'),
+  // new
+  bookmark: require('../img/bookmark.png'),
+  product1: require('../img/product1.png'),
+  product2: require('../img/product2.png'),
+  product3: require('../img/product3.png'),
+  product4: require('../img/product4.png'),
+  
 };
