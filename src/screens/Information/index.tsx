@@ -94,7 +94,7 @@ export default function Information() {
         </TouchableOpacity>
       </View>
       {/* button */}
-      <View style={{top: '22%', alignItems: 'center'}}>
+      <View style={{top: '20%', alignItems: 'center'}}>
         <TouchableOpacity
           style={styles.button}
           activeOpacity={0.3}
