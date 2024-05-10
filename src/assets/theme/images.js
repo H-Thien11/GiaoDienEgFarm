@@ -1,6 +1,7 @@
 export const images = {
   //backGround
   backGround: require('../img/background.png'),
+
   //icon Tabbottom
   iconHome: require('../img/iconHome.png'),
   iconHomeOutline: require('../img/iconHomeOutline.png'),
@@ -10,11 +11,13 @@ export const images = {
   iconNewsOutline: require('../img/iconNewsOutline.png'),
   iconInformation: require('../img/iconInformation.png'),
   iconInformationOutline: require('../img/iconInformationOutline.png'),
+
   //GetStarted
   layOut1: require('../img/layout1.png'),
   layOut2: require('../img/layout2.png'),
   layOut3: require('../img/layout3.png'),
   layOut4: require('../img/layout4.png'),
+
   //AuthForm
   logoBlockChain: require('../img/logoblockchain.png'),
   iconBack: require('../img/back.png'),
@@ -27,6 +30,7 @@ export const images = {
   camera: require('../img/camera.png'),
   iconyes: require('../img/yes.png'),
   iconno: require('../img/no.png'),
+
   //home
   user: require('../img/user.png'),
   userbackground: require('../img/userbackground.png'),
@@ -45,4 +49,16 @@ export const images = {
   backGroundRectangle2: require('../img/backGroundRectangle2.png'),
   createicon: require('../img/createicon.png'),
   noprocess: require('../img/noprocess.png'),
+
+  //Information
+  backGroundInformation: require('../img/backGroundInformation.png'),
+  AndreaCebreros: require('../img/AndreaCebreros.png'),
+  penline: require('../img/penline.png'),
+  clockrotateright: require('../img/clockrotateright.png'),
+  landmark: require('../img/landmark.png'),
+  belloutline: require('../img/belloutline.png'),
+  shieldquartered: require('../img/shieldquartered.png'),
+  circlequestion: require('../img/circlequestion.png'),
+  memoxmark: require('../img/memoxmark.png'),
+  angleright: require('../img/angleright.png'),
 };
