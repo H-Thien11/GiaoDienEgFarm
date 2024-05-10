@@ -45,4 +45,8 @@ export const images = {
   backGroundRectangle2: require('../img/backGroundRectangle2.png'),
   createicon: require('../img/createicon.png'),
   noprocess: require('../img/noprocess.png'),
+  downicon: require('../img/downicon.png'),
+  upicon: require('../img/upicon.png'),
+  backgroundproduct: require('../img/backgroundproduct.png'),
+  mushroom: require('../img/mushroom.png')
 };
