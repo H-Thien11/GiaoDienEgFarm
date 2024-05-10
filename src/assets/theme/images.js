@@ -65,4 +65,5 @@ export const images = {
   circlequestion: require('../img/circlequestion.png'),
   memoxmark: require('../img/memoxmark.png'),
   angleright: require('../img/angleright.png'),
+  camerawhite: require('../img/camerawhite.png'),
 };
