@@ -20,30 +20,31 @@ export default function TabBottom() {
 
           if (route.name === 'Home') {
             iconSource = focused ? images.iconHome : images.iconHomeOutline;
-            customSizeWidth = focused ? size : size;
+            customSizeWidth = focused ? size + 11 : size + 11;
           } else if (route.name === 'Manage') {
             iconSource = focused ? images.iconManage : images.iconManageOutline;
-            customSizeWidth = focused ? size + 10 : size + 10;
+            customSizeWidth = focused ? size + 15 : size + 15;
           } else if (route.name === 'News') {
             iconSource = focused ? images.iconNews : images.iconNewsOutline;
-            customSizeWidth = focused ? size : size;
+            customSizeWidth = focused ? size + 3: size + 3;
           } else if (route.name === 'Information') {
             iconSource = focused
               ? images.iconInformation
               : images.iconInformationOutline;
-            customSizeWidth = focused ? size + 28 : size + 28;
+            customSizeWidth = focused ? size + 37 : size + 37;
           }
 
           return (
             <View style={{alignItems: 'center'}}>
               <Image
                 source={iconSource}
-                style={{width: customSizeWidth, height: size + 10}}
+                style={{width: customSizeWidth, height: size + 18}}
               />
             </View>
           );
         },
         tabBarStyle: {
+          height: '7%',
           position: 'absolute',
           backgroundColor: colors.tab,
           borderTopLeftRadius: 10,

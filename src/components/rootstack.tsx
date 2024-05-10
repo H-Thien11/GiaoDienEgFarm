@@ -60,6 +60,7 @@ export default function RootStack() {
         name="ActivateStampsSecond"
         component={ActivateStampsSecond}
       />
+      {/* hi */}
       <Stack.Screen name="Pileofpillows" component={Pileofpillows} />
     </Stack.Navigator>
   

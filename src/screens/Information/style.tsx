@@ -1,4 +1,5 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
+import colors from '../../components/color';
 
 const styles = StyleSheet.create({
   // background
@@ -8,27 +9,79 @@ const styles = StyleSheet.create({
     height: '108%',
     bottom: '8%',
   },
-  //gradient
-  container: {
-    flex: 1.0,
-    justifyContent: 'center',
+  absolute: {
+    position: 'absolute',
   },
-  gradient1: {
-    height: 200,
-    width: 300,
+  //Information
+  textcontainer: {
+    right: '20%',
+    top: '35%',
+  },
+  textInformation: {
+    fontFamily: 'Inter-Bold',
+    color: colors.white,
+    fontWeight: '700',
+    fontSize: 17,
+    lineHeight: 20.57,
+  },
+  avatar: {
+    bottom: '15%',
+    left: '15%',
+  },
+  buttonpen: {
+    right: '10%',
+    bottom: '5%',
+    width: 30,
+    height: 30,
     justifyContent: 'center',
+    alignItems: 'center',
+  },
+  // setting
+  containerSetting: {
+    top: '18%',
+    width: '85%',
     alignSelf: 'center',
-    borderRadius: 15,
+    backgroundColor: 'rgba(6, 100, 153, 0.3)',
+    marginTop: '3%',
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+    borderRadius: 10,
   },
-  gradient2: {
-    borderRadius: 15,
-    height: 200,
-    width: 300,
+  textSetting: {
+    marginLeft: 10,
+    fontWeight: '600',
+    fontSize: 18,
+    lineHeight: 21.09,
+    color: colors.white,
+  },
+  item: {
+    flexDirection: 'row',
+    borderBottomWidth: 2,
+    borderBottomColor: colors.white,
+    marginHorizontal: '5%',
+    paddingVertical: 20,
+    justifyContent: 'space-between',
+  },
+  //button
+  button: {
+    height: 50,
+    width: 277,
+    borderRadius: 23.5,
+  },
+  gradient: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 23.5,
+    height: '100%',
+    width: '100%',
+  },
+  resend: {
+    fontSize: 20,
+    lineHeight: 23,
+    color: colors.white,
+    fontWeight: '700',
+    fontFamily: 'IBMPlexSans-Bold',
   },
 });
 
-export default styles
-
-
-
-
+export default styles;
