@@ -39,21 +39,42 @@ const styles = StyleSheet.create({
     lineHeight: 19,
   },
   // product
-  containerproduct: {
-    alignSelf: 'center',
-    width: '85%',
-    height: '75%',
-    bottom: '1%',
-    backgroundColor: 'blue',
-    borderBottomEndRadius: 10,
+  framedetail: {
+    width: '78%',
+    height: '50%',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    borderBottomEndRadius: 9,
+    borderBottomStartRadius: 9,
   },
-  img: {
-    top: 10,
-    width: '85%',
-    height: '70%',
-    borderTopStartRadius: 10,
-    borderStartWidth: 10
-  }
+  header: {
+    flexDirection: 'row',
+    marginVertical: '7%',
+  },
+  name: {
+    fontFamily: 'Roboto-Bold',
+    fontWeight: '700',
+    fontSize: 13,
+    lineHeight: 15.23,
+    color: 'rgba(0, 0, 0, 1)',
+    marginLeft: '10%',
+    flex: 1,
+  },
+  icon: {
+    flexDirection: 'row',
+    marginLeft: '20%',
+  },
+  secsioncontent: {
+    marginLeft: '10%',
+    marginRight: '9%',
+    fontFamily: 'Roboto-Bold',
+    fontWeight: '700',
+    fontSize: 10,
+    lineHeight: 11.72,
+    color: 'rgba(0, 0, 0, 0.5)',
+  },
+  contentsecond: {
+    marginTop: '10%',
+  },
 });
 
 export default styles;
