@@ -38,6 +38,22 @@ const styles = StyleSheet.create({
     fontSize: 19,
     lineHeight: 19,
   },
+  // product
+  containerproduct: {
+    alignSelf: 'center',
+    width: '85%',
+    height: '75%',
+    bottom: '1%',
+    backgroundColor: 'blue',
+    borderBottomEndRadius: 10,
+  },
+  img: {
+    top: 10,
+    width: '85%',
+    height: '70%',
+    borderTopStartRadius: 10,
+    borderStartWidth: 10
+  }
 });
 
 export default styles;
