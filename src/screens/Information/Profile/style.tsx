@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   //image
   containerImg: {
     alignItems: 'center',
-    marginVertical: '5%',
+    marginTop: '5%',
   },
   //information
   containerInformation: {
