@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import styles from './style';
-
 import {images} from '../../assets/theme/images';
 import {useNavigation} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -23,6 +22,7 @@ export default function News() {
       author: 'George Washington',
       day: 'Thurday 09 2022',
       image: 'product1' as any,
+      saved: 'bookmarksolid',
     },
     {
       name: 'Hay When You Need It',
@@ -30,6 +30,7 @@ export default function News() {
       author: 'George News',
       day: 'Thurday 09 2022',
       image: 'product2' as any,
+      saved: 'bookmarkregular',
     },
     {
       name: 'Hay When You Need It',
@@ -37,6 +38,7 @@ export default function News() {
       author: 'News Washington',
       day: 'Thurday 09 2022',
       image: 'product3' as any,
+      saved: 'bookmarkregular',
     },
     {
       name: 'Strawberry Ginger',
@@ -44,6 +46,7 @@ export default function News() {
       author: 'George Washington',
       day: 'Thurday 09 2022',
       image: 'product4' as any,
+      saved: 'bookmarkregular',
     },
   ]);
   const navigation = useNavigation() as any;
@@ -58,7 +61,10 @@ export default function News() {
           <Text style={[styles.texttitle, styles.font]}>News</Text>
           <View style={{flexDirection: 'row', marginLeft: '50%'}}>
             <TouchableOpacity activeOpacity={0.6}>
-              <Image style={styles.imageiconheader} source={images.bookmark} />
+              <Image
+                style={styles.imageiconheader}
+                source={images.bookmarksolid}
+              />
             </TouchableOpacity>
             <TouchableOpacity activeOpacity={0.6}>
               <Image
@@ -75,9 +81,12 @@ export default function News() {
         <View>
           <FlatList
             data={products}
+            style={{marginTop: '8%'}}
             renderItem={function ({item: products}): React.JSX.Element {
               return (
-                <View style={{alignItems: 'center', marginTop: '10%'}}>
+                <TouchableOpacity
+                  activeOpacity={0.7}
+                  style={{alignItems: 'center', marginTop: '3%'}}>
                   <LinearGradient
                     locations={[0, 1]}
                     colors={[
@@ -87,16 +96,58 @@ export default function News() {
                     start={{x: 0, y: 0}}
                     end={{x: 0, y: 1}}
                     style={styles.gradientInput}>
+                    <View style={styles.secsioncontent}>
                       {/* image product */}
-                    <View style={{width: '30%', height: '88%', marginLeft: '1.5%', position: 'absolute'}}>
-                      <Image
-                        source={images[products.image]}
-                        style={[styles.imageproduct]}
-                      />
+                      <TouchableOpacity activeOpacity={0.7} style={styles.viewimage}>
+                        <Image
+                          source={images[products.image]}
+                          style={[styles.imageproduct]}
+                        />
+                      </TouchableOpacity>
+                      {/* secsion content */}
+                      <View style={styles.viewcontent}>
+                        <View style={{flexDirection: 'row'}}>
+                          {/* name product */}
+                          <Text style={styles.name}>{products.name}</Text>
+                          {/* button saved */}
+                          <TouchableOpacity
+                            activeOpacity={0.3}
+                            style={{
+                              position: 'absolute',
+                              left: '90%',
+                              width: 11,
+                              height: 12,
+                            }}>
+                            <Image
+                              style={{width: '100%', height: '100%'}}
+                              source={images[products.saved]}
+                            />
+                          </TouchableOpacity>
+                        </View>
+                        {/* description */}
+                        <Text style={styles.description}>
+                          {products.description}
+                        </Text>
+                        {/* author and day */}
+                        <View
+                          style={{
+                            flexDirection: 'row',
+                            justifyContent: 'space-between',
+                            width: '90%',
+                            alignItems: 'center',
+                            marginTop: '3%',
+                          }}>
+                          <Text style={[styles.secsionbottom, styles.author]}>
+                            {products.author}
+                          </Text>
+                          <Text style={[styles.secsionbottom]}>
+                            {products.day}
+                          </Text>
+                        </View>
+                      </View>
                     </View>
-                    <Text style={styles.name}>{products.name}</Text>
                   </LinearGradient>
-                </View>
+                </TouchableOpacity>
               );
             }}
           />

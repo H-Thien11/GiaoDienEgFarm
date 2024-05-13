@@ -53,24 +53,53 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 4,
   },
+  secsioncontent: {
+    flexDirection: 'row',
+    // backgroundColor: 'red',
+    height: '100%',
+  },
   name: {
-    fontFamily: 'Inter-Medium',
-    fontWeight: '500',
-    fontSize: 10,
-    lineHeight: 12,
-    color: 'rgba(255, 255, 255, 1)',
-    marginTop: '4%',
-    
+    fontFamily: 'Roboto-Bold',
+    fontWeight: '700',
+    fontSize: 13,
+    lineHeight: 15.23,
+    color: 'rgba(0, 0, 0, 1)',
+    // marginTop: '4%',
+  },
+  viewimage: {
+    width: '30%',
+    marginLeft: '2%',
+    marginVertical: '2%',
   },
   imageproduct: {
     width: '100%',
     height: '100%',
-    
+  },
+  viewcontent: {
+    flex: 1,
+    width: '100%',
+    marginTop: '5%',
+    marginHorizontal: '3%',
+  },
+  description: {
+    fontFamily: 'Roboto-Medium',
+    fontWeight: '500',
+    fontSize: 10,
+    lineHeight: 11.72,
+    color: 'rgba(0, 0, 0, 0.5)',
+    marginVertical: '5%',
+  },
+  secsionbottom: {
+    fontFamily: 'Roboto-Medium',
+    fontWeight: '700',
+    fontSize: 7,
+    lineHeight: 8.2,
+    color: 'rgba(0, 0, 0, 1)',
+  },
+  author: {
+    flex: 0.4,
   },
 });
 
 export default styles
-
-
-
 

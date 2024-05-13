@@ -67,7 +67,8 @@ export const images = {
   angleright: require('../img/angleright.png'),
   
   // new
-  bookmark: require('../img/bookmark.png'),
+  bookmarksolid: require('../img/bookmarksolid.png'),
+  bookmarkregular: require('../img/bookmarkregular.png'),
   product1: require('../img/product1.png'),
   product2: require('../img/product2.png'),
   product3: require('../img/product3.png'),
