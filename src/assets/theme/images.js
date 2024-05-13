@@ -75,4 +75,6 @@ export const images = {
   product4: require('../img/product4.png'),
   
   camerawhite: require('../img/camerawhite.png'),
+
+  product42: require('../img/product4(2).png'),
 };
