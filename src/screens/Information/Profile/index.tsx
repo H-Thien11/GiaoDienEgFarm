@@ -4,6 +4,7 @@ import {
   ImageBackground,
   TouchableOpacity,
   Image,
+  TextInput,
 } from 'react-native';
 import React from 'react';
 import styles from './style';
@@ -25,7 +26,7 @@ export default function Manage() {
           <Text style={[styles.texttitle, styles.font700]}>Profile</Text>
           <Image style={{}} source={images.bell} />
         </View>
-
+        {/* Image */}
         <View style={styles.containerImg}>
           <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
             <Image source={images.AndreaCebreros} />
@@ -45,6 +46,77 @@ export default function Manage() {
             />
           </View>
         </View>
+        {/* information */}
+        <View style={styles.containerInformation}>
+          {/* item 1 */}
+          <View style={{marginTop: '7%', marginBottom: '3%'}}>
+            <Text style={[styles.font700, styles.label]}>Name</Text>
+            <TextInput
+              style={[styles.font300, styles.textInput]}
+              placeholderTextColor={colors.white}
+              placeholder="Name"></TextInput>
+            <Image
+              style={{position: 'absolute', right: 0, top: '60%'}}
+              source={images.penline}
+            />
+          </View>
+          {/* item 2 */}
+          <View style={{marginBottom: '3%'}}>
+            <Text style={[styles.font700, styles.label]}>Role</Text>
+            <TextInput
+              style={[styles.font300, styles.textInput]}
+              placeholderTextColor={colors.white}
+              placeholder="Production staff"></TextInput>
+            <Image
+              style={{position: 'absolute', right: 0, top: '60%'}}
+              source={images.penline}
+            />
+          </View>
+          {/* item */}
+          <View style={{marginBottom: '3%'}}>
+            <Text style={[styles.font700, styles.label]}>Email</Text>
+            <TextInput
+              style={[styles.font300, styles.textInput]}
+              placeholderTextColor={colors.white}
+              placeholder="Name@gmail.com"></TextInput>
+            <Image
+              style={{position: 'absolute', right: 0, top: '60%'}}
+              source={images.penline}
+            />
+          </View>
+          {/* item */}
+          <View style={{marginBottom: '3%'}}>
+            <Text style={[styles.font700, styles.label]}>Phone</Text>
+            <TextInput
+              style={[styles.font300, styles.textInput]}
+              placeholderTextColor={colors.white}
+              placeholder="0987656789"></TextInput>
+            <Image
+              style={{position: 'absolute', right: 0, top: '60%'}}
+              source={images.penline}
+            />
+          </View>
+          {/* item */}
+          <View style={{marginBottom: '3%'}}>
+            <Text style={[styles.font700, styles.label]}>Address</Text>
+            <TextInput
+              style={[styles.font300, styles.textInput]}
+              placeholderTextColor={colors.white}
+              placeholder="294khuongviet"></TextInput>
+            <Image
+              style={{position: 'absolute', right: 0, top: '60%'}}
+              source={images.penline}
+            />
+          </View>
+        </View>
+        {/* Text */}
+        <Text style={[styles.font300, styles.text]}>Application</Text>
+        {/* Button */}
+        <TouchableOpacity style={styles.button}>
+          <Text style={[styles.font300, styles.textButton]}>
+            Blockchain solution for access
+          </Text>
+        </TouchableOpacity>
       </View>
     </ImageBackground>
   );
