@@ -96,8 +96,9 @@ export default function Information() {
       {/* button */}
       <View style={{top: '20%', alignItems: 'center'}}>
         <TouchableOpacity
+        
           style={styles.button}
-          activeOpacity={0.3}
+          activeOpacity={0.7}
           onPress={() => navigation.navigate('Home')}>
           <LinearGradient
             locations={[0, 1]}

@@ -28,20 +28,23 @@ export default function Manage() {
         </View>
         {/* Image */}
         <View style={styles.containerImg}>
-          <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={{flexDirection: 'row', alignItems: 'flex-end'}}>
             <Image source={images.AndreaCebreros} />
             <Image
               style={{top: '2%', right: '5%'}}
               source={images.camerawhite}
             />
-          </View>
-          <View style={{flexDirection: 'row', marginTop: '5%'}}>
-            <Text
+          </TouchableOpacity>
+          <View
+            style={{flexDirection: 'row', marginTop: '5%'}}>
+            <TextInput
               style={[styles.font700, styles.texttitle, {color: colors.green}]}>
               Name
-            </Text>
+            </TextInput>
             <Image
-              style={{left: '200%', marginTop: '1%'}}
+              style={{ position: 'absolute',left: '20%', top: '31%'}}
               source={images.penline}
             />
           </View>
@@ -112,7 +115,7 @@ export default function Manage() {
         {/* Text */}
         <Text style={[styles.font300, styles.text]}>Application</Text>
         {/* Button */}
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity activeOpacity={0.7} style={styles.button}>
           <Text style={[styles.font300, styles.textButton]}>
             Blockchain solution for access
           </Text>
