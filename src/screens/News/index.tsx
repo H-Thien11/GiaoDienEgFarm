@@ -88,7 +88,7 @@ export default function News() {
                   activeOpacity={0.7}
                   style={{alignItems: 'center', marginTop: '3%'}}>
                   <LinearGradient
-                    locations={[0, 1]}
+                    locations={[0,1]}
                     colors={[
                       'rgba(255, 255, 255, 1)',
                       'rgba(119, 255, 210, 1)',
@@ -98,7 +98,9 @@ export default function News() {
                     style={styles.gradientInput}>
                     <View style={styles.secsioncontent}>
                       {/* image product */}
-                      <TouchableOpacity activeOpacity={0.7} style={styles.viewimage}>
+                      <TouchableOpacity
+                        activeOpacity={0.7}
+                        style={styles.viewimage}>
                         <Image
                           source={images[products.image]}
                           style={[styles.imageproduct]}

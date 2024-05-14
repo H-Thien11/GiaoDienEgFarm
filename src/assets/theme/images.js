@@ -77,4 +77,14 @@ export const images = {
   camerawhite: require('../img/camerawhite.png'),
 
   product42: require('../img/product4(2).png'),
+  tomatothird: require('../img/tomatothird.png'),
+  sun: require('../img/Sun.png'),
+  humidity: require('../img/humidity.png'),
+  sunny: require('../img/sunny.png'),
+  cloudy: require('../img/cloudy.png'),
+  clouds: require('../img/clouds.png'),
+  rainy: require('../img/rainy.png'),
+  wind: require('../img/wind.png'),
+  location: require('../img/location.png'),
+
 };
