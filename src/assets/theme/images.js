@@ -54,6 +54,10 @@ export const images = {
   backgroundproduct: require('../img/backgroundproduct.png'),
   mushroom: require('../img/mushroom.png'),
 
+  tomato: require('../img/Tomato.png'),
+  cucumber: require('../img/Сucumber.png'),
+  pepper: require('../img/Pepper.png'),
+  eggplant: require('../img/Eggplant.png'),
   //Information
   backGroundInformation: require('../img/backGroundInformation.png'),
   AndreaCebreros: require('../img/AndreaCebreros.png'),
@@ -65,7 +69,7 @@ export const images = {
   circlequestion: require('../img/circlequestion.png'),
   memoxmark: require('../img/memoxmark.png'),
   angleright: require('../img/angleright.png'),
-  
+
   // new
   bookmarksolid: require('../img/bookmarksolid.png'),
   bookmarkregular: require('../img/bookmarkregular.png'),
@@ -73,8 +77,6 @@ export const images = {
   product2: require('../img/product2.png'),
   product3: require('../img/product3.png'),
   product4: require('../img/product4.png'),
-  
   camerawhite: require('../img/camerawhite.png'),
-
   product42: require('../img/product4(2).png'),
 };

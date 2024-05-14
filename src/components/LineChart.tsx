@@ -2,10 +2,10 @@ import React from 'react';
 import {Svg, Path} from 'react-native-svg';
 import * as d3 from 'd3';
 
-const LineChart = ({data}) => {
+const LineChart = ({data, color}) => {
   // Định nghĩa kích thước và padding cho SVG
-  const SVGHeight = 300;
-  const SVGWidth = 300;
+  const SVGHeight = 65;
+  const SVGWidth = 100;
   const padding = 20;
 
   // Tạo một scale cho trục x và y
@@ -31,7 +31,7 @@ const LineChart = ({data}) => {
 
   return (
     <Svg height={SVGHeight} width={SVGWidth}>
-      <Path d={pathData} fill="none" stroke="blue" strokeWidth={2} />
+      <Path d={pathData} fill="none" stroke={color} strokeWidth={1} />
     </Svg>
   );
 };

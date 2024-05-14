@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 import colors from '../../../components/color';
 
 const styles = StyleSheet.create({
@@ -93,12 +93,33 @@ const styles = StyleSheet.create({
     marginTop: '1%',
   },
   //Market price
-  textlabel: {fontSize: 20, lineHeight: 20, marginLeft: '7.5%'},
-  containerGradient2: {    shadowColor: 'rgba(173, 173, 173, 0.08)', // Màu đổ bóng
+  textlabel: {fontSize: 20, lineHeight: 20, marginLeft: '7.5%', marginBottom: '1%'},
+  containerGradient2: {
+    width: '85%',
+    height: 80,
+    alignSelf: 'center',
+    marginVertical: '2%',
+    borderRadius: 8,
+    shadowColor: 'rgba(173, 173, 173, 0.08)', // Màu đổ bóng
     shadowOffset: {width: 0, height: 2}, // Độ lệch theo trục x và y
     shadowOpacity: 0.5, // Độ mờ của đổ bóng
     shadowRadius: 4, // Bán kính mờ của đổ bóng
     elevation: 4, // Chỉ dùng cho Android (tương tự shadowRadius)
-  }
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+  name: {
+    fontSize: 16,
+    lineHeight: 18.75,
+    bottom: '2%',
+    right: '10%',
+  },
+  price: {
+    fontSize: 16,
+    lineHeight: 18.75,
+    bottom: '2%',
+    right: '10%',
+  },
 });
 export default styles;
