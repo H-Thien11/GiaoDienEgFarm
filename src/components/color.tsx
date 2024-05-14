@@ -4,4 +4,6 @@ export default {
   register: '#00FB91',
   green: '#01FB91',
   tab: '#066499',
+  red: '#D90429',
+  green2: '#21BF73',
 };
