@@ -6,4 +6,10 @@ export default {
   tab: '#066499',
   red: '#D90429',
   green2: '#21BF73',
+  green3: '#007777',
+  white2: '#ECF4FF',
+  white3: '#FEFEFE',
+  white4: '#F8F9FA',
+  gray: '#6C757D',
+  black: '#212529',
 };

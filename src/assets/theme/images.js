@@ -58,6 +58,7 @@ export const images = {
   cucumber: require('../img/Сucumber.png'),
   pepper: require('../img/Pepper.png'),
   eggplant: require('../img/Eggplant.png'),
+  iconExchange: require('../img/exchange.png'),
   //Information
   backGroundInformation: require('../img/backGroundInformation.png'),
   AndreaCebreros: require('../img/AndreaCebreros.png'),

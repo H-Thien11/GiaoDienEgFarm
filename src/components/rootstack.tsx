@@ -25,6 +25,7 @@ import FertilizerInformation from '../screens/Manage/FertilizerInformation';
 import AgriculturalProcess from '../screens/Manage/AgriculturalProcess';
 import IncubateRawMaterialsFist from '../screens/Manage/IncubateRawMaterialsFist';
 import Information from '../screens/Information';
+import Chart from '../screens/Manage/Chart';
 //News
 import Detail from '../screens/News/Detail';
 import News from '../screens/News/';
@@ -35,6 +36,6 @@ const Stack = createNativeStackNavigator();
 
 export default function RootStack() {
   return (
-    <MyAgriculturalProcessSecond></MyAgriculturalProcessSecond>
+    <Chart></Chart>
   );
 }
