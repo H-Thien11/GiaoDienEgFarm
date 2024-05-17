@@ -77,7 +77,7 @@ export default function Index() {
           <TouchableOpacity
             style={styles.button}
             activeOpacity={0.3}
-            onPress={() => navigation.navigate('Home')}>
+            onPress={() => navigation.navigate('MyAgriculturalProcessSecond')}>
             <LinearGradient
               locations={[0, 1]}
               colors={['#2AFCFF', '#00FB91']}

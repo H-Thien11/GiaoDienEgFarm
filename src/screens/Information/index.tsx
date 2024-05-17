@@ -11,9 +11,11 @@ import styles from './style';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {images} from '../../assets/theme/images';
 import LinearGradient from 'react-native-linear-gradient';
+import { useNavigation } from '@react-navigation/native';
 
 const Tab = createBottomTabNavigator();
 export default function Information() {
+  const navigation = useNavigation() as any;
   return (
     <ImageBackground
       resizeMode="stretch"
@@ -37,6 +39,7 @@ export default function Information() {
         />
         {/* button penline */}
         <TouchableOpacity
+          onPress={() => navigation.navigate('Profile')}
           activeOpacity={0.7}
           style={[styles.absolute, styles.buttonpen]}>
           <Image source={images.penline} />
@@ -96,10 +99,9 @@ export default function Information() {
       {/* button */}
       <View style={{top: '20%', alignItems: 'center'}}>
         <TouchableOpacity
-        
           style={styles.button}
           activeOpacity={0.7}
-          onPress={() => navigation.navigate('Home')}>
+          onPress={() => navigation.navigate('Login')}>
           <LinearGradient
             locations={[0, 1]}
             colors={['#FB0000', '#FBFF2A']}

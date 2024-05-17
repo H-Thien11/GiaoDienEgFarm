@@ -12,9 +12,10 @@ import colors from '../../../components/color';
 import Icons from 'react-native-vector-icons/FontAwesome6';
 import {LineChart} from 'react-native-gifted-charts';
 import LinearGradient from 'react-native-linear-gradient';
-import {Stop} from 'react-native-svg';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Index() {
+  const navigation = useNavigation() as any;
   const lineData = [
     {value: 24, label: 'Jan'},
     {value: 25, label: 'Feb'},
@@ -64,9 +65,6 @@ export default function Index() {
             lineGradient={true}
             lineGradientStartColor="#296934"
             lineGradientEndColor="#51CF67"
-            hideXAxis={false}
-            hideYAxis={false}
-            hideGrid={false}
           />
         </View>
 
@@ -142,6 +140,22 @@ export default function Index() {
               </Text>
             </View>
           </LinearGradient>
+        </View>
+        {/* prices */}
+        <View style={{height: '10%', marginVertical: '3%'}}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('RecentQuotes')}
+            activeOpacity={0.7}
+            style={styles.prices}>
+            <View style={styles.ellipse1}>
+              <View style={styles.ellipse2} />
+            </View>
+            {/* number price */}
+            <View style={{marginLeft: '7%'}}>
+              <Text style={styles.price}>$ 27.00</Text>
+              <Text style={styles.price}>+0.13%</Text>
+            </View>
+          </TouchableOpacity>
         </View>
         {/* time */}
         <View style={styles.time}>

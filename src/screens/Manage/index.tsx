@@ -44,6 +44,7 @@ export default function Manage() {
 
           {/* items 2 */}
           <TouchableOpacity
+            onPress={() => navigation.navigate('MyAgriculturalProcessFist')}
             activeOpacity={0.7}
             style={{justifyContent: 'center', marginBottom: '5%'}}>
             <Image source={images.backGroundRectangle2} />

@@ -53,14 +53,16 @@ export default function News() {
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={images.backGround}        
+      source={images.backGround}
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* title */}
         <View style={styles.title}>
           <Text style={[styles.texttitle, styles.font]}>News</Text>
           <View style={{flexDirection: 'row', marginLeft: '50%'}}>
-            <TouchableOpacity activeOpacity={0.6}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Saved')}
+              activeOpacity={0.6}>
               <Image
                 style={styles.imageiconheader}
                 source={images.bookmarksolid}
@@ -85,10 +87,11 @@ export default function News() {
             renderItem={function ({item: products}): React.JSX.Element {
               return (
                 <TouchableOpacity
+                  onPress={() => navigation.navigate('Detail')}
                   activeOpacity={0.7}
                   style={{alignItems: 'center', marginTop: '3%'}}>
                   <LinearGradient
-                    locations={[0,1]}
+                    locations={[0, 1]}
                     colors={[
                       'rgba(255, 255, 255, 1)',
                       'rgba(119, 255, 210, 1)',

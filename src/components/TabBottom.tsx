@@ -9,6 +9,7 @@ import Manage from '../screens/Manage';
 import News from '../screens/News';
 import Information from '../screens/Information';
 import Pileofpillows from '../screens/Home/PileOfPillows';
+import NavigateManage from './NavigateManage';
 
 const Tab = createBottomTabNavigator();
 export default function TabBottom() {
@@ -26,7 +27,7 @@ export default function TabBottom() {
             customSizeWidth = focused ? size + 19 : size + 19;
           } else if (route.name === 'News') {
             iconSource = focused ? images.iconNews : images.iconNewsOutline;
-            customSizeWidth = focused ? size + 8: size + 8;
+            customSizeWidth = focused ? size + 8 : size + 8;
           } else if (route.name === 'Information') {
             iconSource = focused
               ? images.iconInformation
@@ -59,7 +60,8 @@ export default function TabBottom() {
         tabBarLabelStyle: {display: 'none'},
       })}>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Manage" component={Manage} />
+      {/* <Tab.Screen name="Manage" component={Manage} /> */}
+      <Tab.Screen name="Manage" component={NavigateManage} />
       <Tab.Screen name="News" component={News} />
       <Tab.Screen name="Information" component={Information} />
     </Tab.Navigator>

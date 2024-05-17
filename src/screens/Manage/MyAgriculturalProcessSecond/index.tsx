@@ -115,7 +115,9 @@ export default function Index() {
           data={ListItems}
           renderItem={function ({item: ListItems}): React.JSX.Element {
             return (
-              <TouchableOpacity activeOpacity={0.7}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('Chart')}
+                activeOpacity={0.7}>
                 <LinearGradient
                   locations={[0, 1]}
                   colors={['#023552', '#0477B8']}

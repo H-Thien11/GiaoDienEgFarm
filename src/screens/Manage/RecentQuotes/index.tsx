@@ -3,25 +3,15 @@ import {
   Text,
   ImageBackground,
   Image,
-  TextInput,
   TouchableOpacity,
-  ActivityIndicator,
-  StyleSheet,
   FlatList,
-  ScrollView,
 } from 'react-native';
 import React, {useRef, useState} from 'react';
 import styles from './style';
-import LinearGradient from 'react-native-linear-gradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
 import {useNavigation} from '@react-navigation/native';
-import DropDownPicker from 'react-native-dropdown-picker';
 import {images} from '../../../assets/theme/images';
-import Title from '../../../components/Title';
-import {Camera, useCameraDevice} from 'react-native-vision-camera';
-import {FlatGrid} from 'react-native-super-grid';
-import {rotationHandlerName} from 'react-native-gesture-handler/lib/typescript/handlers/RotationGestureHandler';
 import Icons from 'react-native-vector-icons/FontAwesome6';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import colors from '../../../components/color';
@@ -42,36 +32,6 @@ export default function Index() {
     {
       name: 'September Futures down.',
       date: 'Sep 01, 2021',
-      time: '09:25:05 AM',
-      arrows: 'down',
-    },
-    {
-      name: 'October Futures down.',
-      date: 'Oct 01, 2021',
-      time: '09:25:05 AM',
-      arrows: 'down',
-    },
-    {
-      name: 'October Futures down.',
-      date: 'Oct 01, 2021',
-      time: '09:25:05 AM',
-      arrows: 'down',
-    },
-    {
-      name: 'October Futures down.',
-      date: 'Oct 01, 2021',
-      time: '09:25:05 AM',
-      arrows: 'down',
-    },
-    {
-      name: 'October Futures down.',
-      date: 'Oct 01, 2021',
-      time: '09:25:05 AM',
-      arrows: 'down',
-    },
-    {
-      name: 'October Futures down.',
-      date: 'Oct 01, 2021',
       time: '09:25:05 AM',
       arrows: 'down',
     },
@@ -184,8 +144,10 @@ export default function Index() {
                       borderTopWidth: 0.5,
                     }}>
                     <View style={styles.textquote}>
-                      <Text>Last Closing up.</Text>
-                      <Text>Ago 08, 2021 | 09:26:08 AM</Text>
+                      <Text>{data.name}</Text>
+                      <Text>
+                        {data.date} | {data.time}
+                      </Text>
                     </View>
                     <Icons
                       style={{

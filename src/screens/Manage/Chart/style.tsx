@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     shadowRadius: 4, // Bán kính mờ của đổ bóng
     elevation: 4, // Chỉ dùng cho Android (tương tự shadowRadius)
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   titleChart: {
     fontSize: 15,
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     color: '#171725',
     marginTop: '5%',
     marginLeft: '5%',
-    alignSelf: 'flex-start'
+    alignSelf: 'flex-start',
   },
   // button time
   containerButton: {
@@ -148,10 +148,11 @@ const styles = StyleSheet.create({
   //container
   container: {
     alignItems: 'center',
+    height: '8%',
   },
   containerGradient: {
     width: '95%',
-    height: '25%',
+    height: '100%',
     borderRadius: 8,
     justifyContent: 'space-between',
     flexDirection: 'row',
@@ -164,13 +165,47 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 18.75,
   },
+  //price
+  prices: {
+    width: '95%',
+    alignSelf: 'center',
+    height: '100%',
+    backgroundColor: 'rgba(0, 73, 115, 1)',
+    borderRadius: 6,
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  ellipse1: {
+    width: 52,
+    height: 52,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: '5%',
+  },
+  ellipse2: {
+    width: 33.19,
+    height: 33.19,
+    backgroundColor: 'rgba(0, 194, 255, 1)',
+    borderRadius: 50,
+  },
+  price: {
+    fontFamily: 'Roboto-Medium',
+    fontWeight: '500',
+    fontSize: 14,
+    lineHeight: 16.41,
+    color: 'rgba(255, 255, 255, 1)',
+    marginVertical: '3%',
+  },
   // time
   time: {
     flexDirection: 'row',
     alignItems: 'center',
     width: '70%',
     justifyContent: 'space-between',
-    marginLeft: '5%'
+    marginLeft: '5%',
+    marginTop: '7%'
   },
   containerTextTime: {},
 });

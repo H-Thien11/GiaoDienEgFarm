@@ -49,7 +49,7 @@ export default function Index() {
           <TouchableOpacity
             style={styles.createicon}
             activeOpacity={0.3}
-            onPress={() => navigation.goBack()}>
+            onPress={() => navigation.navigate('CreateProcess')}>
             <Image source={images.createicon} />
           </TouchableOpacity>
         </View>
@@ -73,7 +73,7 @@ export default function Index() {
             <TouchableOpacity
               style={styles.button}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('Home')}>
+              onPress={() => navigation.navigate('CreateProcess')}>
               <LinearGradient
                 locations={[0, 1]}
                 colors={['#2AFCFF', '#00FB91']}
