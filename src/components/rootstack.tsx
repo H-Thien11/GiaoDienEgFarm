@@ -2,10 +2,10 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import TabBottom from './TabBottom';
 //GetStarted
-import LayOut1 from '../screens/GetStarted/Layout1';
-import LayOut2 from '../screens/GetStarted/Layout2';
-import LayOut3 from '../screens/GetStarted/Layout3';
-import LayOut4 from '../screens/GetStarted/Layout4';
+import LayOut1 from '../screens/GetStarted/LayOut1';
+import LayOut2 from '../screens/GetStarted/LayOut2';
+import LayOut3 from '../screens/GetStarted/LayOut3';
+import LayOut4 from '../screens/GetStarted/LayOut4';
 //AuthForm
 import LogIn from '../screens/AuthForm/LogIn';
 import Register from '../screens/AuthForm/Register';
@@ -83,10 +83,10 @@ export default function RootStack() {
      
 
       {/* News */}
-      <Stack.Screen name="Detail" component={Detail} />
-      <Stack.Screen name="Saved" component={Saved} />
+      {/* <Stack.Screen name="Detail" component={Detail} />
+      <Stack.Screen name="Saved" component={Saved} /> */}
       {/* Information */}
-      <Stack.Screen name="Profile" component={Profile} />
+      {/* <Stack.Screen name="Profile" component={Profile} /> */}
     </Stack.Navigator>
   );
 }

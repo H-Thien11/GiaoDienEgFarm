@@ -25,6 +25,7 @@ export default function Manage() {
     },
   ]);
   const navigation = useNavigation() as any;
+  const [iconColor, setIconColor] = useState(true);
   return (
     <ImageBackground
       resizeMode="stretch"
@@ -34,7 +35,12 @@ export default function Manage() {
         {/* title */}
         <View style={styles.title}>
           <Text style={[styles.texttitle, styles.font700]}>News</Text>
-          <Image style={{marginLeft: '60%'}} source={images.bookmarksolid} />
+          <TouchableOpacity
+            style={{marginLeft: '50%'}}
+            onPress={() => navigation.navigate('Saved')}
+            activeOpacity={0.6}>
+            <Image style={{marginLeft: '60%'}} source={images.bookmarksolid} />
+          </TouchableOpacity>
           <Image source={images.bell} />
         </View>
         {/* product */}
@@ -50,13 +56,26 @@ export default function Manage() {
               <View style={styles.header}>
                 <Text style={styles.name}>{product.name}</Text>
                 <View style={styles.icon}>
-                  <TouchableOpacity activeOpacity={0.5}>
-                    <Icon
-                      name="bookmark"
-                      size={15}
-                      color={'rgba(0, 0, 0, 1)'}
-                      solid
-                    />
+                  <TouchableOpacity
+                    activeOpacity={0.5}
+                    onPress={() => {
+                      setIconColor(!iconColor);
+                    }}>
+                    {iconColor ? (
+                      <Icon
+                        name="bookmark"
+                        size={15}
+                        color={'rgba(0, 0, 0, 1)'}
+                        solid
+                      />
+                    ) : (
+                      <Icon
+                        name="bookmark"
+                        size={15}
+                        color={'rgba(2, 255, 172, 1)'}
+                        solid
+                      />
+                    )}
                   </TouchableOpacity>
                   <TouchableOpacity
                     activeOpacity={0.5}

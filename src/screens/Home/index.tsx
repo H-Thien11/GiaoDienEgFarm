@@ -63,8 +63,8 @@ export default function Home() {
           {/* item 3 */}
           <TouchableOpacity
             onPress={() =>
-              navigation.navigate('Manage', {
-                screen: 'Pileofpillows',
+              navigation.navigate('Home', {
+                screen: 'PileOfPillows',
               })
             }
             activeOpacity={0.7}

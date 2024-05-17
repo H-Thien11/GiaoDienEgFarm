@@ -10,6 +10,8 @@ import News from '../screens/News';
 import Information from '../screens/Information';
 import Pileofpillows from '../screens/Home/PileOfPillows';
 import NavigateManage from './NavigateManage';
+import NavigateNews from './NavigateNews';
+import NavigateInformation from './NavigateInformation';
 
 const Tab = createBottomTabNavigator();
 export default function TabBottom() {
@@ -62,8 +64,8 @@ export default function TabBottom() {
       <Tab.Screen name="Home" component={Home} />
       {/* <Tab.Screen name="Manage" component={Manage} /> */}
       <Tab.Screen name="Manage" component={NavigateManage} />
-      <Tab.Screen name="News" component={News} />
-      <Tab.Screen name="Information" component={Information} />
+      <Tab.Screen name="News" component={NavigateNews} />
+      <Tab.Screen name="Information" component={NavigateInformation} />
     </Tab.Navigator>
   );
 }
