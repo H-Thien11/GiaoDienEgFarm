@@ -103,7 +103,8 @@ export default function News() {
                       {/* image product */}
                       <TouchableOpacity
                         activeOpacity={0.7}
-                        style={styles.viewimage}>
+                        style={styles.viewimage}
+                        onPress={() => navigation.navigate('Detail')}>
                         <Image
                           source={images[products.image]}
                           style={[styles.imageproduct]}

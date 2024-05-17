@@ -63,6 +63,7 @@ export default function Home() {
           {/* item 3 */}
           <TouchableOpacity
             onPress={() => navigation.navigate('Pileofpillows')}
+
             activeOpacity={0.7}
             style={styles.rectangle}>
             <View style={{alignItems: 'center'}}>

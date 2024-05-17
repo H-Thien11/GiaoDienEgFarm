@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     flex: 2,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   contentContainer: {
     flex: 1,
@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
     lineHeight: 24,
+    color: 'rgba(0, 0, 0, 1)',
   },
 });
 
