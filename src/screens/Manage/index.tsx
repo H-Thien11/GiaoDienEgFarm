@@ -63,6 +63,7 @@ export default function Manage() {
 
           {/* items 4 */}
           <TouchableOpacity
+            onPress={() => navigation.navigate('FertilizerInformation')}
             activeOpacity={0.7}
             style={{justifyContent: 'center', marginBottom: '5%'}}>
             <Image source={images.backGroundRectangle2} />
@@ -72,6 +73,7 @@ export default function Manage() {
 
           {/* items 5 */}
           <TouchableOpacity
+            onPress={() => navigation.navigate('AgriculturalProcess')}
             activeOpacity={0.7}
             style={{justifyContent: 'center', marginBottom: '5%'}}>
             <Image source={images.backGroundRectangle2} />
@@ -81,6 +83,7 @@ export default function Manage() {
 
           {/* items 6 */}
           <TouchableOpacity
+            onPress={() => navigation.navigate('TraceabilityOfProductOrigin')}
             activeOpacity={0.7}
             style={{justifyContent: 'center', marginBottom: '5%'}}>
             <Image source={images.backGroundRectangle2} />

@@ -108,7 +108,7 @@ export default function Pileofpillows() {
             <TouchableOpacity
               style={styles.button}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('Home')}>
+              onPress={() => navigation.navigate('IncubateRawMaterialsSecond')}>
               <LinearGradient
                 locations={[0, 1]}
                 colors={['#2AFCFF', '#00FB91']}

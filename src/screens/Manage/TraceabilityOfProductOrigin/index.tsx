@@ -123,7 +123,12 @@ export default function Index() {
             spacing={20}
             renderItem={function ({item: products}): React.JSX.Element {
               return (
-                <View>
+                <TouchableOpacity
+                  onPress={() =>
+                    navigation.navigate('IncubateRawMaterialsFist')
+                  }
+                  activeOpacity={0.7}
+                  >
                   <LinearGradient
                     locations={[0, 1]}
                     colors={['rgba(4, 119, 184, 1)', 'rgba(2, 53, 82, 1)']}
@@ -138,7 +143,7 @@ export default function Index() {
                     </View>
                     <Text style={styles.name}>{products.name}</Text>
                   </LinearGradient>
-                </View>
+                </TouchableOpacity>
               );
             }}
           />

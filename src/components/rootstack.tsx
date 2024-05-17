@@ -13,25 +13,26 @@ import ResendOTP from '../screens/AuthForm/Resend/OTP';
 import ResendKYC from '../screens/AuthForm/Resend/KYC';
 import CameraKYC from '../screens/AuthForm/Resend/Camera';
 //Home
-import AddProductionLog from '../screens/Home/AddProductionLog';
 import ActivateStampsFirst from '../screens/Home/ActivateStampsFirst';
 import ActivateStampsSecond from '../screens/Home/ActivateStampsSecond';
-import Pileofpillows from '../screens/Home/PileOfPillows';
 //Manage
 import MyFarm from '../screens/Manage/MyFarm';
 import MyAgriculturalProcessFist from '../screens/Manage/MyAgriculturalProcessFist';
 import CreateProcess from '../screens/Manage/CreateProcess';
 import MyAgriculturalProcessSecond from '../screens/Manage/MyAgriculturalProcessSecond';
 import Chart from '../screens/Manage/Chart';
-import FertilizerInformation from '../screens/Manage/FertilizerInformation';
 import AgriculturalProcess from '../screens/Manage/AgriculturalProcess';
 import IncubateRawMaterialsFist from '../screens/Manage/IncubateRawMaterialsFist';
+import IncubateRawMaterialsSecond from '../screens/Manage/IncubateRawMaterialsSecond';
 import Information from '../screens/Information';
+import RecentQuotes from '../screens/Manage/RecentQuotes';
+import Weather from '../screens/Manage/Weather';
 // News
 import Detail from '../screens/News/Detail';
 import Saved from '../screens/News/Saved';
 //Information
 import Profile from '../screens/Information/Profile';
+import Manage from '../screens/Manage';
 
 const Stack = createNativeStackNavigator();
 
@@ -54,9 +55,7 @@ export default function RootStack() {
       <Stack.Screen name="ResendKYC" component={ResendKYC} />
       <Stack.Screen name="CameraKYC" component={CameraKYC} />
       {/* Home */}
-
       <Stack.Screen name="Home" component={TabBottom} />
-      <Stack.Screen name="AddProductionLog" component={AddProductionLog} />
       <Stack.Screen
         name="ActivateStampsFirst"
         component={ActivateStampsFirst}
@@ -65,23 +64,17 @@ export default function RootStack() {
         name="ActivateStampsSecond"
         component={ActivateStampsSecond}
       />
-
-      {/* <Stack.Screen name="Pileofpillows" component={Pileofpillows} /> */}
       {/* Manage */}
-
-      <Stack.Screen name="MyFarm" component={MyFarm} />
+      <Stack.Screen name="RecentQuotes" component={RecentQuotes} />
+      <Stack.Screen name="Weather" component={Weather} />
       <Stack.Screen
-        name="MyAgriculturalProcessFist"
-        component={MyAgriculturalProcessFist}
+        name="IncubateRawMaterialsFist"
+        component={IncubateRawMaterialsFist}
       />
-      <Stack.Screen name="CreateProcess" component={CreateProcess} />
       <Stack.Screen
-        name="MyAgriculturalProcessSecond"
-        component={MyAgriculturalProcessSecond}
+        name="IncubateRawMaterialsSecond"
+        component={IncubateRawMaterialsSecond}
       />
-      <Stack.Screen name="Chart" component={Chart} />
-     
-
       {/* News */}
       <Stack.Screen name="Detail" component={Detail} />
       <Stack.Screen name="Saved" component={Saved} />

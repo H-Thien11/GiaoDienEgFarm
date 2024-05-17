@@ -115,7 +115,10 @@ export default function Index() {
           </View>
           {/* prices */}
           <View style={{justifyContent: 'center', alignItems: 'center'}}>
-            <View style={styles.prices}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Weather')}
+              activeOpacity={0.7}
+              style={styles.prices}>
               <View style={styles.ellipse1}>
                 <View style={styles.ellipse2} />
               </View>
@@ -124,62 +127,55 @@ export default function Index() {
                 <Text style={styles.price}>$ 6,388.00</Text>
                 <Text style={styles.price}>+0.13%</Text>
               </View>
-            </View>
+            </TouchableOpacity>
           </View>
         </View>
         {/* recent quote */}
         {/* information */}
         <View style={styles.containerInformation}>
           <Text style={[styles.font700, styles.label]}>Recent Quotes</Text>
-            <FlatList
-              data={data}
-              style={{marginTop: '7%'}}
-              renderItem={function ({item: data}): React.JSX.Element {
-                const iconName =
-                  data.arrows === 'up'
-                    ? 'circle-arrow-up'
-                    : 'circle-arrow-down';
-                const iconColor =
-                  data.arrows === 'up'
-                    ? 'rgba(81, 207, 102, 1)'
-                    : 'rgba(212, 81, 81, 1)';
-                return (
-                  <View
-                    style={{
-                      marginTop: '3%',
-                      borderTopColor: 'rgba(255, 255, 255, 0.5)',
-                      borderTopWidth: 0.5,
-                    }}>
-                    <View style={styles.textquote}>
-
-                      
-
-
-                      <Text style={styles.textname}>{data.name}</Text>
-                      <Text style={styles.textdatetime}>
-
-                        {data.date} | {data.time}
-                      </Text>
-                    </View>
-
-                    <Icons
-                      style={{
-                        backgroundColor: colors.white,
-                        width: 16,
-                        height: 16,
-                        borderRadius: 50,
-                        position: 'absolute',
-                        right: 0,
-                        top: '30%',
-                      }}
-                      color={iconColor}
-                      size={16}
-                      name={iconName}
-                    />
+          <FlatList
+            data={data}
+            style={{marginTop: '7%'}}
+            renderItem={function ({item: data}): React.JSX.Element {
+              const iconName =
+                data.arrows === 'up' ? 'circle-arrow-up' : 'circle-arrow-down';
+              const iconColor =
+                data.arrows === 'up'
+                  ? 'rgba(81, 207, 102, 1)'
+                  : 'rgba(212, 81, 81, 1)';
+              return (
+                <View
+                  style={{
+                    marginTop: '3%',
+                    borderTopColor: 'rgba(255, 255, 255, 0.5)',
+                    borderTopWidth: 0.5,
+                  }}>
+                  <View style={styles.textquote}>
+                    <Text style={styles.textname}>{data.name}</Text>
+                    <Text style={styles.textdatetime}>
+                      {data.date} | {data.time}
+                    </Text>
                   </View>
-                );
-              }}
-            />
+
+                  <Icons
+                    style={{
+                      backgroundColor: colors.white,
+                      width: 16,
+                      height: 16,
+                      borderRadius: 50,
+                      position: 'absolute',
+                      right: 0,
+                      top: '30%',
+                    }}
+                    color={iconColor}
+                    size={16}
+                    name={iconName}
+                  />
+                </View>
+              );
+            }}
+          />
         </View>
       </View>
     </ImageBackground>
