@@ -41,7 +41,6 @@ export default function Index() {
       time: '09:25:05 AM',
       arrows: 'down',
     },
-    
   ]);
   const handleCellTextChange = async (text: any, i: any) => {
     if (i === 0) {
@@ -67,7 +66,7 @@ export default function Index() {
           </TouchableOpacity>
         </View>
         {/* secsion */}
-        <View style={{flex: 1, backgroundColor: 'red'}}>
+        <View style={{flex: 1}}>
           {/* image */}
           <View style={styles.imgheader}>
             <Image
@@ -136,6 +135,14 @@ export default function Index() {
               data={data}
               style={{marginTop: '7%'}}
               renderItem={function ({item: data}): React.JSX.Element {
+                const iconName =
+                  data.arrows === 'up'
+                    ? 'circle-arrow-up'
+                    : 'circle-arrow-down';
+                const iconColor =
+                  data.arrows === 'up'
+                    ? 'rgba(81, 207, 102, 1)'
+                    : 'rgba(212, 81, 81, 1)';
                 return (
                   <View
                     style={{
@@ -144,11 +151,17 @@ export default function Index() {
                       borderTopWidth: 0.5,
                     }}>
                     <View style={styles.textquote}>
-                      <Text>{data.name}</Text>
-                      <Text>
+
+                      
+
+
+                      <Text style={styles.textname}>{data.name}</Text>
+                      <Text style={styles.textdatetime}>
+
                         {data.date} | {data.time}
                       </Text>
                     </View>
+
                     <Icons
                       style={{
                         backgroundColor: colors.white,
@@ -159,9 +172,9 @@ export default function Index() {
                         right: 0,
                         top: '30%',
                       }}
-                      color={'#51CF66'}
+                      color={iconColor}
                       size={16}
-                      name="circle-arrow-up"
+                      name={iconName}
                     />
                   </View>
                 );

@@ -161,6 +161,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     backgroundColor: 'rgba(6, 100, 153, 0.3)',
     paddingHorizontal: 20,
+    marginBottom: '10%',
     borderRadius: 10,
     shadowColor: 'rgba(0, 0, 0, 0.25)', // Màu đổ bóng
     shadowOffset: {width: 0, height: 4}, // Độ lệch theo trục x và y
@@ -172,7 +173,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 21,
     marginBottom: '-5%',
-    marginTop: '3%'
+    marginTop: '3%',
   },
   // text
   text: {
@@ -186,5 +187,21 @@ const styles = StyleSheet.create({
     marginTop: '3%',
     justifyContent: 'center',
   },
+  textname: {
+    fontFamily: 'Roboto-Medium',
+    fontWeight: '500',
+    fontSize: 12,
+    lineHeight: 14.06,
+    color: 'rgba(255, 255, 255, 1)',
+    marginBottom: '3%'
+  },
+  textdatetime: {
+    fontFamily: 'Roboto-Regular',
+    fontWeight: '400',
+    fontSize: 10,
+    lineHeight: 11.72,
+    color: 'rgba(255, 255, 255, 1)',
+  },
+
 });
 export default styles;
