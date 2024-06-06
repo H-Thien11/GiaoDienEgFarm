@@ -16,23 +16,12 @@ import CameraKYC from '../screens/AuthForm/Resend/Camera';
 import ActivateStampsFirst from '../screens/Home/ActivateStampsFirst';
 import ActivateStampsSecond from '../screens/Home/ActivateStampsSecond';
 //Manage
-import MyFarm from '../screens/Manage/MyFarm';
-import MyAgriculturalProcessFist from '../screens/Manage/MyAgriculturalProcessFist';
-import CreateProcess from '../screens/Manage/CreateProcess';
-import MyAgriculturalProcessSecond from '../screens/Manage/MyAgriculturalProcessSecond';
-import Chart from '../screens/Manage/Chart';
-import AgriculturalProcess from '../screens/Manage/AgriculturalProcess';
 import IncubateRawMaterialsFist from '../screens/Manage/IncubateRawMaterialsFist';
 import IncubateRawMaterialsSecond from '../screens/Manage/IncubateRawMaterialsSecond';
-import Information from '../screens/Information';
 import RecentQuotes from '../screens/Manage/RecentQuotes';
 import Weather from '../screens/Manage/Weather';
 // News
-import Detail from '../screens/News/Detail';
-import Saved from '../screens/News/Saved';
 //Information
-import Profile from '../screens/Information/Profile';
-import Manage from '../screens/Manage';
 
 const Stack = createNativeStackNavigator();
 

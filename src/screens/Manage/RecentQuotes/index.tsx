@@ -144,12 +144,14 @@ export default function Index() {
                 data.arrows === 'up'
                   ? 'rgba(81, 207, 102, 1)'
                   : 'rgba(212, 81, 81, 1)';
+                  const borderTopWidth =
+                    data.name === 'Last Closing up.' ? 0 : 0.5;
               return (
                 <View
                   style={{
                     marginTop: '3%',
                     borderTopColor: 'rgba(255, 255, 255, 0.5)',
-                    borderTopWidth: 0.5,
+                    borderTopWidth: borderTopWidth,
                   }}>
                   <View style={styles.textquote}>
                     <Text style={styles.textname}>{data.name}</Text>
